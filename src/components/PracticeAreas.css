@@ -1,0 +1,158 @@
+.practice-areas {
+    background-color: var(--color-background-alt);
+}
+
+.practices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.practice-card {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    /* Make it look clickable */
+    position: relative;
+    overflow: hidden;
+}
+
+.practice-card::after {
+    content: 'Detaylar';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    transition: bottom 0.3s ease;
+}
+
+.practice-card:hover::after {
+    bottom: 0;
+}
+
+.practice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.icon-wrapper {
+    color: var(--color-secondary);
+    background-color: rgba(204, 164, 59, 0.1);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.practice-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: slideUp 0.3s ease;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    color: var(--primary-color);
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-icon {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.modal-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
