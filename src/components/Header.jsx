@@ -29,16 +29,6 @@ const Header = () => {
                 <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                     <ul>
                         <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Ana Sayfa</Link></li>
-                        <li className="dropdown">
-                            <a href="#" onClick={toggleDropdown} className="dropdown-toggle">
-                                Çalışma Alanları <ChevronDown size={16} />
-                            </a>
-                            <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-                                <li><Link to="/calisma-alanlarimiz/ceza-hukuku" onClick={() => setIsMenuOpen(false)}>Ceza Hukuku</Link></li>
-                                <li><Link to="/calisma-alanlarimiz/aile-hukuku" onClick={() => setIsMenuOpen(false)}>Aile Hukuku</Link></li>
-                                <li><Link to="/calisma-alanlarimiz/miras-hukuku" onClick={() => setIsMenuOpen(false)}>Miras Hukuku</Link></li>
-                            </ul>
-                        </li>
                         <li><Link to="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link></li>
                         <li><Link to="/#about" onClick={() => setIsMenuOpen(false)}>Hakkımızda</Link></li>
                         <li><Link to="/#contact" onClick={() => setIsMenuOpen(false)}>İletişim</Link></li>

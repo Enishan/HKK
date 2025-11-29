@@ -15,10 +15,8 @@ const Footer = () => {
                         <h3>Hızlı Bağlantılar</h3>
                         <ul>
                             <li><Link to="/">Ana Sayfa</Link></li>
-                            <li><Link to="/calisma-alanlarimiz/ceza-hukuku">Ceza Hukuku</Link></li>
-                            <li><Link to="/calisma-alanlarimiz/aile-hukuku">Aile Hukuku</Link></li>
-                            <li><Link to="/calisma-alanlarimiz/miras-hukuku">Miras Hukuku</Link></li>
                             <li><Link to="/blog">Blog</Link></li>
+                            <li><Link to="/#about">Hakkımızda</Link></li>
                             <li><Link to="/#contact">İletişim</Link></li>
                         </ul>
                     </div>

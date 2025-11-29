@@ -4,15 +4,15 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import PracticeAreas from '../components/PracticeAreas';
 import Contact from '../components/Contact';
-import FAQ from '../components/FAQ';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Dilek Hukuk ve Danışmanlık | Pendik Avukat</title>
-                <meta name="description" content="Pendik Ceza Avukatı, Boşanma Avukatı, Miras Avukatı ve daha fazlası. Dilek Hukuk ve Danışmanlık olarak profesyonel hukuki destek sunuyoruz. +90 501 514 25 34" />
-                <meta name="keywords" content="Pendik Avukat, Ceza Avukatı, Boşanma Avukatı, Miras Avukatı, İcra Avukatı, İş Avukatı, Hukuk Bürosu, İstanbul Avukat, Dilek Hukuk" />
+                <title>Dilek Hukuk Bürosu | Pendik Avukat & Danışmanlık - İstanbul</title>
+                <meta name="description" content="İstanbul Pendik'te faaliyet gösteren Dilek Hukuk Bürosu; Ceza, Boşanma, Miras ve İş Hukuku alanlarında uzman avukat kadrosuyla profesyonel hukuki danışmanlık ve avukatlık hizmeti sunmaktadır." />
+                <meta name="keywords" content="Pendik Avukat, İstanbul Hukuk Bürosu, Ceza Avukatı Pendik, Boşanma Avukatı İstanbul, Miras Avukatı, İş Hukuku Avukatı, Dilek Hukuk" />
                 <script type="application/ld+json">
                     {`
                     {
@@ -55,7 +55,7 @@ const Home = () => {
             <Hero />
             <About />
             <PracticeAreas />
-            <FAQ />
+            <Testimonials />
             <Contact />
         </>
     );

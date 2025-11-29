@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
+
+# Disallow admin routes
+Disallow: /portal-giris-x7k9
+Disallow: /portal-yonetim-z4m2/
+
 Sitemap: https://dilekhukuk.com/sitemap.xml

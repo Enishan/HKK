@@ -13,13 +13,16 @@ const About = () => {
                             <p className="subtitle">Adalet, Güven ve Profesyonellik</p>
                         </div>
                         <p>
-                            Dilek Hukuk ve Danışmanlık olarak, müvekkillerimize en yüksek standartlarda hukuki hizmet sunmayı ilke edindik.
-                            Yılların getirdiği tecrübe ve dinamik ekibimizle, karmaşık hukuki süreçlerde yanınızdayız.
+                            Dilek Hukuk ve Danışmanlık, <strong>İstanbul Pendik</strong> merkezli ofisinde, hukukun üstünlüğü ilkesiyle yerli ve yabancı müvekkillerine kapsamlı avukatlık ve danışmanlık hizmeti sunmaktadır.
+                            <strong>Pendik avukat</strong> arayışınızda, tecrübeli ve dinamik kadromuzla hukuki süreçlerinizin her aşamasında yanınızdayız.
                         </p>
                         <p>
-                            Hukukun üstünlüğüne olan inancımızla, her bir davayı titizlikle ele alıyor ve müvekkillerimizin haklarını
-                            en etkin şekilde savunuyoruz. Şeffaflık, dürüstlük ve sonuç odaklı yaklaşımımızla Pendik ve İstanbul genelinde
-                            güvenilir bir hukuk partneri olmaktan gurur duyuyoruz.
+                            <strong>Ceza Avukatı</strong>, <strong>Boşanma Avukatı</strong> ve <strong>Miras Hukuku</strong> alanlarında uzmanlaşmış ekibimiz, her dosyayı titizlikle inceleyerek kişiye özel hukuki stratejiler geliştirmektedir.
+                            <strong>İstanbul Hukuk Bürosu</strong> olarak, müvekkillerimizin haklarını en etkin şekilde savunmayı ve hukuki süreçleri şeffaflıkla yürütmeyi taahhüt ediyoruz.
+                        </p>
+                        <p>
+                            İş Hukuku, Gayrimenkul Hukuku ve Ticaret Hukuku gibi alanlarda da faaliyet gösteren büromuz, müvekkil memnuniyetini esas alan, güvenilir ve sonuç odaklı bir yaklaşım sergilemektedir.
+                            Hukuki sorunlarınıza profesyonel ve kalıcı çözümler üretmek için çalışıyoruz.
                         </p>
 
                         <div className="features-grid">

@@ -1,27 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --color-primary: #0f172a; /* Navy Blue */
-  --color-secondary: #cca43b; /* Gold */
+  --color-primary: #0f172a;
+  /* Navy Blue */
+  --color-secondary: #cca43b;
+  /* Gold */
   --color-text: #334155;
   --color-text-light: #64748b;
   --color-background: #ffffff;
   --color-background-alt: #f8fafc;
   --color-white: #ffffff;
-  
+
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
-  
+
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
   --spacing-xl: 8rem;
-  
+
   --border-radius: 4px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
-  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -37,7 +43,12 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--color-primary);
   line-height: 1.2;
@@ -99,6 +110,25 @@ button {
 .section-title {
   text-align: center;
   margin-bottom: var(--spacing-lg);
+}
+
+/* Testimonials Scroll Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+.hover\:pause:hover {
+  animation-play-state: paused;
 }
 
 .section-title h2 {
