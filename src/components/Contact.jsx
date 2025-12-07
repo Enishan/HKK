@@ -1,5 +1,6 @@
 import React from 'react';
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -23,7 +24,7 @@ const Contact = () => {
                         </div>
 
                         <div className="info-item">
-                            <MessageCircle className="icon" size={24} />
+                            <FaWhatsapp className="icon" size={24} />
                             <div>
                                 <h3>WhatsApp</h3>
                                 <p><a href="https://wa.me/905015142534" target="_blank" rel="noopener noreferrer">WhatsApp'tan Yazın</a></p>

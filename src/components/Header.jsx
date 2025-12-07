@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Menu, X, MessageCircle, ChevronDown } from 'lucide-react';
+import { Phone, Menu, X, ChevronDown } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import './Header.css';
 
 const Header = () => {
@@ -21,8 +22,11 @@ const Header = () => {
             <div className="container header-container">
                 <div className="logo">
                     <Link to="/">
-                        <h1>Dilek Hukuk</h1>
-                        <span>& Danışmanlık</span>
+                        <img src="/logo.png" alt="Dilek Hukuk Logosu" className="logo-image" />
+                        <div className="logo-text">
+                            <h1>Dilek Hukuk</h1>
+                            <span>& Danışmanlık</span>
+                        </div>
                     </Link>
                 </div>
 
@@ -43,7 +47,7 @@ const Header = () => {
 
                 <div className="header-actions">
                     <a href="https://wa.me/905015142534" target="_blank" rel="noopener noreferrer" className="btn-icon whatsapp">
-                        <MessageCircle size={24} />
+                        <FaWhatsapp size={24} />
                     </a>
                     <a href="tel:+905015142534" className="btn btn-primary desktop-only">
                         <Phone size={18} />

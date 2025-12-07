@@ -1,5 +1,6 @@
 import React from 'react';
-import { Phone, MessageCircle } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import './Hero.css';
 
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
                         Bizi Arayın
                     </a>
                     <a href="https://wa.me/905015142534" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-                        <MessageCircle size={20} />
+                        <FaWhatsapp size={20} />
                         WhatsApp'tan Yazın
                     </a>
                 </div>

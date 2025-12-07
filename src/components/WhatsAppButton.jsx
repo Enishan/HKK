@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import './WhatsAppButton.css';
 
 const WhatsAppButton = () => {
@@ -11,7 +11,7 @@ const WhatsAppButton = () => {
             rel="noopener noreferrer"
             aria-label="WhatsApp ile iletişime geçin"
         >
-            <MessageCircle size={32} />
+            <FaWhatsapp size={32} />
             <span className="whatsapp-tooltip">WhatsApp'tan Yazın</span>
         </a>
     );
